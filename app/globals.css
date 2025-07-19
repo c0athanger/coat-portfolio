@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 :root {
   --background: #e6f1ff;
   --foreground: #171717;
@@ -85,6 +84,17 @@ h1, h2, h3, h4, h5, h6 {
 @layer utilities {
   p {
     @apply text-slate-400;
+    
+  }
+}
+
+@layer base {
+  p {
+    @apply text-xs leading-relaxed text-white sm:text-base;
+  }
+
+  h1 {
+    @apply text-sm font-bold text-white sm:text-2xl;
   }
 }
 

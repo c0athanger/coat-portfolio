@@ -10,12 +10,12 @@ const Card = ({ date, title, description, link, languages }: CardProps) => {
 
 	const content = (
 		<div className={`group hover:bg-slate-800/50 rounded-lg p-6 flex transition-colors duration-300 ${link ? 'cursor-pointer' : 'cursor-default'}`}>
-			<div className="w-1/4 pr-4 flex">
-				<span className="text-gray-500 text-md font-semibold mt-10">{date}</span>
+			<div className="w-1/4 flex">
+				<span className="text-gray-500 text-xs sm:text-base font-semibold mt-10">{date}</span>
 			</div>
 
-			<div className="w-3/4">
-				<h2 className="text-lg font-medium text-slate-200 mb-2 flex items-center gap-1">
+			<div className="w-3/4 pl-4">
+				<h2 className="text-base sm:text-lg font-medium text-slate-200 mb-2 flex items-center gap-1">
 					{title}
 					{link && (
 						<svg
@@ -39,7 +39,7 @@ const Card = ({ date, title, description, link, languages }: CardProps) => {
 					{languages.map((lang, index) => (
 						<span
 							key={index}
-							className="bg-teal-400/10 bg-opacity-20 text-teal-300 text-sm px-3 py-1 rounded-full"
+							className="bg-teal-400/10 bg-opacity-20 text-teal-300 text-xs sm:text-sm px-3 py-1 rounded-full"
 						>
 							{lang}
 						</span>

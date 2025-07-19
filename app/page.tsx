@@ -135,11 +135,11 @@ export default function Home() {
       ) : (
         <motion.div className="">
           <Nav isHome={isHome} />
-          <motion.div id="content" className="pt-20 flex flex-row justify-center w-full max-w-full">
-            <motion.div className="sticky top-20 w-full max-w-2xl h-full pl-10 pr-30 pl">
+          <motion.div id="content" className=" flex flex-row justify-center w-full max-w-full">
+            <motion.div className="sticky top-0 w-full max-w-40 sm:max-w-2xl h-full pl-2 pr-4 sm:pl-10 sm:pr-30">
               <Namecard delay={0.6} />
             </motion.div>
-            <motion.div className="flex flex-col space-y-4 w-full max-w-2xl pr-10">
+            <motion.div className="flex flex-col space-y-4 w-full max-w-60 sm:max-w-2xl sm:pr-10 pr-2">
 
               <About id='About' delay={0.6} />
               <CardList id="Experience" delay={1.2} data={experience} />

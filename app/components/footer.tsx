@@ -4,7 +4,7 @@ import Pawn from './Icons/pawn';
 
 const Footer = () => {
 	return (
-		<div className="fixed bottom-20 left-0 z-50 p-6">
+		<div className="fixed bottom-0 left-0 z-50 p-6">
 			<ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
 				<li className="mr-5 shrink-0 text-xs space-y-3">
 					<a

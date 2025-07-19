@@ -8,11 +8,11 @@ interface AboutProps {
 
 const About = ({ id = '', delay = 0 }: AboutProps) => {
 	return (
-		<motion.div id={id} className="flex flex-col w-full pt-20 max-w-2xl">
+		<motion.div id={id} className="pt-10 sm:pt-20 flex flex-col w-full max-w-52 sm:max-w-2xl">
 
 
 			<motion.div className="flex flex-col flex-wrap items-start">
-				<motion.div className="text-lg mt-4 w-full"
+				<motion.div className=" mt-4 w-full"
 					initial={{ opacity: 0, x: 40 }}
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.5, delay: delay + 0.4 }}>

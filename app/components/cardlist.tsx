@@ -15,8 +15,8 @@ interface CardListProps {
 }
 const CardList = ({ id: title, delay = 0, data }: CardListProps) => {
 	return (
-		<motion.div id={title} className="relative overflow-x-hidden pt-20 group/cards flex flex-col gap-4">
-			<motion.h1 className="text-left text-3xl text-white"
+		<motion.div id={title} className="relative overflow-x-hidden pt-10 sm:pt-20 group/cards flex flex-col gap-4">
+			<motion.h1 className="text-left sm:text-3xl text-lg text-white"
 				initial={{ opacity: 0, y: -40 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.5, delay: delay }}>

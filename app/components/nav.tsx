@@ -39,7 +39,7 @@ const Nav = ({ isHome }: NavProps) => {
 		<motion.div
 			className="bg-nav px-12 md:px-6 lg:px-10 z-[11] filter-none pointer-events-auto select-auto fixed top-0 left-0 w-full h-20 transition-all duration-250 ease-custom-bezier"
 		>
-			<motion.div className="flex items-center relative backdrop-blur w-[100vw] max-w-[100%] overflow-hidden text-lightest-slate z-[12]">
+			<motion.div className="flex text-xs sm:text-base items-center relative backdrop-blur w-[100vw] max-w-[100%] overflow-hidden text-lightest-slate z-[12]">
 				<motion.div className={`flex justify-between items-center w-full ${isMounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}>
 					<motion.div className="flex items-center"
 						initial={{ opacity: 0, y: -20 }}
