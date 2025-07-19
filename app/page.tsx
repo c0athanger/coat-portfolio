@@ -139,7 +139,7 @@ export default function Home() {
             <motion.div className="sticky top-20 w-full max-w-2xl h-full pl-10 pr-30 pl">
               <Namecard delay={0.6} />
             </motion.div>
-            <motion.div className="flex flex-col space-y-4 w-full max-w-2xl">
+            <motion.div className="flex flex-col space-y-4 w-full max-w-2xl pr-10">
 
               <About id='About' delay={0.6} />
               <CardList id="Experience" delay={1.2} data={experience} />
