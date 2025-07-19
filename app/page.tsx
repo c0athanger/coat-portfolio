@@ -49,7 +49,7 @@ const projects = [
     date: '2025',
     title: 'Portfolio Website',
     description: 'Developed a personal portfolio using Next.js and React. Styled with Tailwind CSS.',
-    link: '',
+    link: 'https://github.com/c0athanger/coat-portfolio',
     languages: ['Next.js', 'React', 'Tailwind CSS']
   },
   {
