@@ -68,7 +68,7 @@ const projects = [
   },
   {
     date: '2021',
-    title: 'C++ Implementation of Freddie_segment',
+    title: 'C++ Implementation of Freddie',
     description: 'Freddie is an annotation-free isoform detection and discovery tool that uses as input transcriptomic long-reads (e.g. Oxford Nanopore reads) aligned to the reference genome using a splice aligner.',
     link: 'https://github.com/cigar-bit/freddieC',
     languages: ['C++', 'C']
