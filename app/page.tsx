@@ -56,14 +56,14 @@ const projects = [
     date: '2024',
     title: 'Ocean Change App',
     description: 'Mobile app for fishermen to report observations to the Oregon Department of Fish and Wildlife. Built with Flutter and integrated with Firebase, Firestore, and Hive.',
-    link: 'https://github.com/LeifRasmuson/OAH_OceanChange',
+    link: 'https://youtu.be/eQ6mSBmFA7M?si=WJfaK9UU6TuSuaCX&t=492',
     languages: ['Dart', 'Flutter', 'Firebase', 'Firestore', 'Hive']
   },
   {
     date: '2022',
     title: 'Implementation of Pluribus AI Poker Bot',
-    description: 'Built a poker-playing AI using Counterfactual Regret Minimization. Designed a thread-safe MCCFR model and implemented a poker engine using object-oriented programming.',
-    link: 'https://github.com/cigar-bit/pluribus-poker',
+    description: 'Built a poker-playing AI using Counterfactual Regret Minimization. Designed a thread-safe MCCFR model and implemented a poker engine using object-oriented programming (private repo, contact me for more information).',
+    link: '',
     languages: ['C++', 'C']
   },
   {
