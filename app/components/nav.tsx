@@ -8,7 +8,7 @@ interface NavProps {
 	isHome: boolean;
 }
 
-const nav = ({ isHome }: NavProps) => {
+const Nav = ({ isHome }: NavProps) => {
 	const [isMounted, setIsMounted] = useState(!isHome);
 	const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -22,7 +22,7 @@ const nav = ({ isHome }: NavProps) => {
 		}, 100);
 
 		return () => clearTimeout(timeout);
-	}, []);
+	}, [prefersReducedMotion]);
 
 	const ResumeLink = (
 		<a
@@ -79,4 +79,4 @@ const nav = ({ isHome }: NavProps) => {
 	);
 }
 
-export default nav;
+export default Nav;

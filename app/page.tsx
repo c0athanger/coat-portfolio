@@ -1,10 +1,9 @@
 
 "use client"
-import Image from "next/image";
 import React, { useState, useEffect } from 'react';
 import * as motion from "motion/react-client"
 import Loader from "@/app/components/loader";
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import Nav from "@/app/components/nav";
 import About from "@/app/components/about";
 import CardList from "./components/cardlist";
@@ -87,7 +86,6 @@ const projects = [
 
 
 export default function Home() {
-  const router = useRouter();
   const isHome = usePathname() === '/';
   const [isLoading, setIsLoading] = useState(isHome);
 

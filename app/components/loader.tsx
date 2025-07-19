@@ -1,12 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CoatLoader from "./Icons/coatLoader";
 import * as motion from "motion/react-client"
 
-const strokeDashoffsetInitial = 1000;
 
 const Loader = ({ finishLoading }: { finishLoading: () => void }) => {
-	const [isMounted, setIsMounted] = useState(false);
 
 	return (
 		<motion.div className="flex items-center justify-center fixed top-0 bottom-0 left-0 right-0 w-full h-full bg-navy z-[99]"
