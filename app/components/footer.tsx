@@ -9,7 +9,7 @@ const Footer = () => {
 				<li className="mr-5 shrink-0 text-xs space-y-3">
 					<a
 						className="block hover:text-white text-slate-400"
-						href="https://https://github.com/c0athanger"
+						href="https://github.com/c0athanger"
 						target="_blank"
 						rel="noreferrer noopener"
 						aria-label="GitHub (opens in a new tab)"
