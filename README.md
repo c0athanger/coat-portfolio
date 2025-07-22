@@ -6,9 +6,7 @@ Welcome to my portfolio website! This site showcases my projects, skills, and ba
 👉 [Visit my portfolio](https://coat-portfolio.vercel.app)
 
 ## 🛠️ Local Development
-To run the project locally:
-
-Clone the repository:
+To run the project locally, firt clone the repository:
 
 <pre><code>
 git clone git@github.com:c0athanger/coat-portfolio.git
