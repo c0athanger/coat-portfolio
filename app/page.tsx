@@ -79,6 +79,12 @@ const projects = [
     description: 'Analyzed p-value bias in DESeq2 using permutation testing. Conducted differential gene expression studies on Compute Canada cloud servers. Designed permutation testing methods in R.',
     link: '',
     languages: ['R', 'bash', 'Python']
+  }, {
+    date: '2021',
+    title: 'Oncolytic Virus Data Visualization with R',
+    description: 'Volunteered in a virology lab, where I used R and Leiden clustering to analyze and visualize viral transcriptomic data with custom workflows.',
+    link: '/OncolyticViruses.pdf',
+    languages: ['R', 'Python']
   }
 ];
 
