@@ -68,6 +68,13 @@ const projects = [
   },
   {
     date: '2021',
+    title: 'Oncolytic Virus Data Visualization with R',
+    description: 'Volunteered in a virology lab, where I used R and Leiden clustering to analyze and visualize viral transcriptomic data with custom workflows.',
+    link: '/OncolyticViruses.pdf',
+    languages: ['R', 'Python']
+  },
+  {
+    date: '2021',
     title: 'C++ Implementation of Freddie',
     description: 'Freddie is an annotation-free isoform detection and discovery tool that uses as input transcriptomic long-reads (e.g. Oxford Nanopore reads) aligned to the reference genome using a splice aligner.',
     link: 'https://github.com/cigar-bit/freddieC',
@@ -79,12 +86,6 @@ const projects = [
     description: 'Analyzed p-value bias in DESeq2 using permutation testing. Conducted differential gene expression studies on Compute Canada cloud servers. Designed permutation testing methods in R.',
     link: '',
     languages: ['R', 'bash', 'Python']
-  }, {
-    date: '2021',
-    title: 'Oncolytic Virus Data Visualization with R',
-    description: 'Volunteered in a virology lab, where I used R and Leiden clustering to analyze and visualize viral transcriptomic data with custom workflows.',
-    link: '/OncolyticViruses.pdf',
-    languages: ['R', 'Python']
   }
 ];
 
