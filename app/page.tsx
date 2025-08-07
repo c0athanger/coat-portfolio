@@ -15,7 +15,7 @@ import Namecard from "./components/namecard";
 
 const experience = [
   {
-    date: '2023 — Present',
+    date: '2024 — Present',
     title: 'Software Developer - AI Trainer · DataAnnotation (Freelance)',
     description: 'Performed prompt engineering and quality assurance on AI model outputs. Annotated and corrected code across multiple languages. Reviewed AI responses involving diverse APIs.',
     link: '',
