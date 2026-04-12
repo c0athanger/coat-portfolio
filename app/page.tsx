@@ -5,6 +5,7 @@ import * as motion from "motion/react-client"
 import Loader from "@/app/components/loader";
 import { usePathname } from 'next/navigation';
 import Nav from "@/app/components/nav";
+import { useExternalLinks } from "@/app/hooks/useExternalLinks";
 import About from "@/app/components/about";
 import CardList from "./components/cardlist";
 import Footer from "./components/footer";
@@ -96,25 +97,14 @@ export default function Home() {
   const isHome = usePathname() === '/';
   const [isLoading, setIsLoading] = useState(isHome);
 
-  // Sets target="_blank" rel="noopener noreferrer" on external links
-  const handleExternalLinks = () => {
-    const allLinks = Array.from(document.querySelectorAll('a'));
-    if (allLinks.length > 0) {
-      allLinks.forEach(link => {
-        if (link.host !== window.location.host) {
-          link.setAttribute('rel', 'noopener noreferrer');
-          link.setAttribute('target', '_blank');
-        }
-      });
-    }
-  };
-
   useEffect(() => {
     if (window.location.hash) {
       history.replaceState(null, "", window.location.pathname + window.location.search);
     }
   }, []);
 
+  // Use the new hook for link normalization
+  useExternalLinks();
 
   useEffect(() => {
     if (isLoading) {
@@ -131,8 +121,6 @@ export default function Home() {
         }
       }, 0);
     }
-
-    handleExternalLinks();
   }, [isLoading]);
   return (
     <motion.div className="flex scroll-smooth flex-col fixed top-0 bottom-0 left-0 right-0 w-full h-full bg-navy overflow-y-auto z-[99] cursor-default">
