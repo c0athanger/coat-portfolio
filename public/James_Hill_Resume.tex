@@ -1,0 +1,121 @@
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.58in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\definecolor{heading}{HTML}{17365D}
+\definecolor{rulecolor}{HTML}{A8B3BF}
+\usepackage{microtype}
+\usepackage{parskip}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=0.18in,itemsep=1.7pt,topsep=2.5pt,parsep=0pt,partopsep=0pt}
+\titleformat{\section}{\large\bfseries\color{heading}}{}{0em}{}[\vspace{-3pt}{\color{rulecolor}\titlerule}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\newcommand{\resumeEntry}[4]{
+ \textbf{\color{heading}#1}\hfill \textbf{#2}\\[-1pt]
+ \textit{#3}\hfill {\small\textit{#4}}\\[-3pt]
+}
+
+\begin{document}
+
+\begin{center}
+ {\fontsize{20}{22}\selectfont\textbf{\color{heading}James Hill}}\\[4pt]
+ \small Ottawa, Ontario \enspace {\color{rulecolor}$\vert$} \enspace
+ \href{mailto:jhill044@uottawa.ca}{jhill044@uottawa.ca} \enspace {\color{rulecolor}$\vert$} \enspace
+ (343) 777-8476 \enspace {\color{rulecolor}$\vert$} \enspace
+ \href{https://coat-portfolio.vercel.app}{coat-portfolio.vercel.app}
+\end{center}
+
+\vspace{-5pt}
+\section{Professional Summary}
+Software engineer with experience building and supporting production enterprise systems using Java, C\#, SQL, integration middleware, and distributed messaging technologies. Experienced in backend development, workflow/state-machine design, database programming, automated testing, debugging, and delivery in large Agile environments. Strong foundation in object-oriented design, concurrency, REST APIs, containers, and cloud-native development.
+
+\section{Technical Skills}
+\textbf{Languages:} Java, C\#, C/C++, SQL, JavaScript/TypeScript, Python, Ruby, Bash\\
+\textbf{Backend \& Data:} REST APIs, DB2, IBM ACE/IIB, IBM MQ, IBM RSA, WTX\\
+\textbf{Testing:} JUnit, Mockito, Cucumber, Citrus\\
+\textbf{Infrastructure \& Tools:} Docker, Kubernetes, AWS, Git, Linux\\
+\textbf{Web:} React, Next.js, Angular
+
+\section{Relevant Experience}
+
+\resumeEntry{Scotiabank}{March 2026 -- Present}{Software Engineer II}{Toronto, Ontario}
+\begin{itemize}
+ \item Develop and support high-volume enterprise transaction-processing systems for domestic and international services, with emphasis on reliability, data integrity, and maintainability.
+ \item Build backend integration logic and message-processing workflows using IBM ACE/IIB, IBM FTM, IBM RSA, IBM MQ, DB2.
+ \item Design and implement finite-state machines (FSMs) that coordinate complex asynchronous workflows, event handling, validation, routing, and system state transitions.
+ \item Write and optimize SQL/DB2 operations for transactional workloads, including queries, updates, multi-row processing, transaction boundaries, locking, and concurrency-sensitive logic.
+ \item Develop integration components for message transformation, validation, database access, routing, and communication between distributed enterprise services.
+ \item Diagnose production and integration issues across application, messaging, workflow, and database layers; analyze race conditions, transaction behavior, event sequencing, and system logs.
+ \item Contribute to automated integration and behavior-driven testing using Cucumber and Citrus, alongside developer testing and regression validation.
+ \item Collaborate with architects, developers, QA, and business stakeholders in an Agile environment to deliver changes to business-critical systems.
+\end{itemize}
+
+\resumeEntry{FDM Group}{September 2025 -- Present}{Software Engineering Consultant}{Toronto, Ontario}
+\begin{itemize}
+ \item Developed backend and web applications using Java, C\#, SQL, REST APIs, and modern object-oriented development practices.
+ \item Applied SOLID principles, common design patterns, multithreading, lambdas/streams, structured logging, and static-analysis tooling to build maintainable software.
+ \item Built and tested application components using JUnit and Mockito while working in Agile/Scrum delivery environments.
+ \item Worked with relational databases, containerized development environments, version control, and CI-oriented engineering workflows.
+\end{itemize}
+
+\resumeEntry{DataAnnotation Tech}{January 2024 -- Present}{Software Developer -- AI Trainer (Contract)}{Remote}
+\begin{itemize}
+ \item Evaluate, debug, and improve AI-generated software solutions across Java, C\#, C/C++, Python, JavaScript, Rust, Kotlin, and Bash.
+ \item Train and evaluate AI coding agents by reviewing, correcting, and improving step-by-step problem-solving workflows, tool usage, code changes, and implementation decisions.
+ \item Contributed to training and evaluation work involving Claude, Grok, and Gemini coding models.
+ \item Review code for correctness, instruction adherence, API usage, edge cases, and software-engineering quality; perform QA on other technical analysts' work.
+ \item Assess solutions involving cloud and web technologies including AWS, Azure, Next.js, pandas, and third-party APIs.
+\end{itemize}
+
+\resumeEntry{JSI Telecom}{September 2023 -- December 2023}{Software Developer Co-op}{Ottawa, Ontario}
+\begin{itemize}
+ \item Developed and maintained application features using JavaScript, C\#, Java, Angular, Ruby, SQLite, Docker, Kubernetes.
+ \item Collaborated across development teams to diagnose defects, implement fixes, and deliver new builds in an Agile environment.
+ \item Created Grunt automation tasks for cache-control workflows and used Git/TFS for collaborative version control.
+\end{itemize}
+
+\section{Projects}
+
+\textbf{Pluribus-Inspired Poker AI} \hfill \textit{C++ / C}
+\begin{itemize}
+ \item Built a poker engine using object-oriented design and implemented a Counterfactual Regret Minimization based AI.
+ \item Designed a thread-safe Monte Carlo CFR training model for generating a blueprint strategy, applying concurrency and algorithmic optimization techniques.
+\end{itemize}
+
+\textbf{Banking REST API} \hfill \textit{C\# / .NET / SQL}
+\begin{itemize}
+ \item Built a .NET backend with JWT authentication, role-based authorization, CQRS-style handlers, repositories, and stored-procedure-based persistence.
+ \item Implemented customer, account, transaction, user, and refresh-token workflows with automated tests using xUnit, Moq.
+\end{itemize}
+
+\textbf{Ocean Change App} \hfill \textit{Flutter / Dart / Firebase}
+\begin{itemize}
+ \item Developed a mobile application for reporting environmental observations using Flutter, Firebase/Firestore, Hive, Xcode, and TestFlight.
+\end{itemize}
+
+\textbf{Portfolio Website} \hfill \textit{Next.js / React / Tailwind CSS}
+\begin{itemize}
+ \item Built and deployed a responsive developer portfolio with Next.js and React on Vercel.
+\end{itemize}
+
+\section{Education}
+
+\resumeEntry{Oregon State University}{August 2024}{Bachelor of Science in Computer Science (Postbaccalaureate), GPA: 4.0}{}
+\vspace{2pt}
+\resumeEntry{University of Ottawa}{April 2020}{B.Sc. Honours Biochemistry, Co-op -- Magna Cum Laude}{Ottawa, Ontario}
+
+\section{Languages}
+English (Fluent) \quad $\vert$ \quad French (Proficient)
+
+\end{document}

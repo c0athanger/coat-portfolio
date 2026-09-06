@@ -27,7 +27,7 @@ const Nav = ({ isHome }: NavProps) => {
 	const ResumeLink = (
 		<a
 			className=""
-			href="/Resume2025.pdf"
+			href="/Resume2026.pdf"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
